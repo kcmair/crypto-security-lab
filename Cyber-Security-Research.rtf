@@ -1,0 +1,19 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red78\green78\blue78;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c38039\c38039\c38039;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww21280\viewh13080\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'93In September 2016, the once-mighty Internet titan, while trying to\'a0sell itself to Verizon, announced it had been the victim of a security breach. As it turns out, probably the biggest data breach in history. The breach was most likely the result of attacks by a state-sponsored actor that started in 2014. The compromise exposed the real names, email addresses, dates of birth, and telephone numbers of 500 million Yahoo users. The company revealed that most of the passwords involved had been hashed using the robust bcrypt algorithm. Bcrypt is an algorithm that hashes passwords with salt. A salt is a randomly chosen value, added to the hashing process, to make a hash unique even if the password that is hashed is identical. Using bcrypt makes passwords unusable unless cracked. As it turned out a couple of months later, Yahoo had been compromised before the breach. The company revealed that a different group of hackers had stolen the information of 1 billion accounts. Besides names, birthdates, email addresses, and passwords (these were not as well protected as those involved in 2014), security questions and answers were also compromised. Finally, in October of 2017, Yahoo revised its estimate, saying that all 3 billion user accounts had been compromised in this 2013 breach. The breaches cost Yahoo an estimated $350 million of the sale price to Verizon. Verizon ultimately paid 4.48 billion for Yahoo\'92s core Internet business. The sale agreement stipulated that the two companies shared regulatory and legal liabilities from the breaches.\'a0\
+\
+\pard\pardeftab720\sa448\partightenfactor0
+
+\f1\b \cf2 Attack Vector (how they got in):
+\f0\b0 \'a0Improper Input validation allowed attackers to take on any identity they choose by exploiting a weakness in the creation of user identifying and authorizing cookies. Cookies are pieces of information that get stored on the client device to overcome the inherent stateless behaviour of web servers. Because a stateless web server has no direct means to remember the state or connection details about a connected client, an identifying piece of information is stored on the client (think unique ID code) in the form of a cookie. This cookie should be unique for every user or client connecting to the server, and it will allow the web application to correlate details about the user, typically stored in a database, to the client connection. This allows a normally stateless connection to remember you logged in and use that login to tie your user account to a set of authorized actions. Imagine that if the information stored in a cookie, the information that uniquely\'a0identifies a user of the system isn\'92t that unique, can be stolen or is guessable (as was the case with Yahoo), now an attacker can assume the identity of anyone and use the privileges that come with that account to do evil.\'94\
+\pard\pardeftab720\partightenfactor0
+\cf2 \{https://bpbonline.com/blogs/news/yahoo-data-breach-what-actually-happened\}\
+\
+It seams the easiest way to prevent this type of breach would be to make cookies unique and encrypt them in such a way that the individually identifiable information they contain would not be hackable let alone guessable. }

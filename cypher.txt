@@ -1,0 +1,5 @@
+Progressive Cypher
+
+This cypher will increase the ASCII code of each letter index + 1 for each index in the text. For example abcdefghij would convert to bdfhjlnprt.
+
+"I love Cryptography!" converts to "J"os{k'k{{|uqz5"
